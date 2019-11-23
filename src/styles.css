@@ -1,1 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
+@import './styles/_main.scss';
+@import './styles/_navbar.scss';
+@import '../node_modules/animate.css/animate.min.css';

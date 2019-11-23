@@ -1,0 +1,63 @@
+/* ----- Navigation bar css ----- */
+
+.navbar {
+  background-color: rgb(40, 62, 74);
+  border-bottom: 3px ridge #c7d1d8;
+
+  .navbar-brand {
+    border-right: 1px ridge #c7d1d8;
+    cursor: pointer;
+    margin-left: 10%;
+    padding: 0;
+  }
+
+  .navbar-nav {
+    .active {
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .navbar-nav li {
+    margin: 0 0.5em;
+    font-size: 1.3em;
+    cursor: pointer;
+
+    .nav-link {
+      color: #c7d1d8;
+    }
+
+    .nav-link:hover {
+      color: white;
+      transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+/* ----- Footer css ----- */
+
+.footer {
+  height: 40px;
+  line-height: 40px;
+  border-top: 3px groove gray;
+  text-align: center;
+  opacity: 0.7;
+  color: black;
+
+  .copyright {
+    font-style: italic;
+    text-align: center;
+
+    a {
+      font-style: normal;
+      font-weight: 700;
+    }
+  }
+}

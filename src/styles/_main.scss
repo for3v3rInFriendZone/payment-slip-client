@@ -1,0 +1,41 @@
+html,
+body {
+  background-color: rgb(245, 245, 245);
+  //background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  height: 100%;
+  margin: 0;
+  padding: 0em;
+  font-family: 'Open Sans', monospace, sans-serif;
+  font-size: 14px;
+}
+
+.loading-page {
+  width: 100%;
+  height: 100%;
+
+  .spinner-grow {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .text-info {
+    font-size: 1.5em;
+  }
+}
+
+.divider {
+  border: 0;
+  width: 100%;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.full-container {
+  width: 100%;
+  height: 100%;
+}
+
+small.text-danger {
+  font-size: 1em;
+  color: darkred !important;
+}

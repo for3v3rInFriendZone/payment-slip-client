@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark animated fadeInDown">
+  <a class="navbar-brand" routerLink="/početna">
+    <img src="../../../assets/images/chicken-logo.png" class="img-circle img-responsive" height="50px" width="60px" />
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto ml-auto">
+      <li class="nav-item">
+        <div class="nav-link d-flex flex-column align-items-center">
+          <div>
+            <i class="fas fa-calculator"></i>
+          </div>
+          <span>Preračun</span>
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="nav-link d-flex flex-column align-items-center">
+          <div>
+            <i class="fas fa-th"></i>
+          </div>
+          <span>Komore</span>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <div class="nav-link d-flex flex-column align-items-center">
+          <div>
+            <i class="far fa-file-alt"></i>
+          </div>
+          <span>Dokumenti</span>
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="nav-link d-flex flex-column align-items-center">
+          <div>
+            <i class="fas fa-file-invoice-dollar"></i>
+          </div>
+          <span>Fakture</span>
+        </div>
+      </li>
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <div class="nav-link d-flex flex-column align-items-center">
+          <div>
+            <i class="fas fa-user-alt"></i>
+          </div>
+          <span>Profil</span>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <div class="nav-link d-flex flex-column align-items-center" (click)="logout()">
+          <div>
+            <i class="fas fa-sign-out-alt"></i>
+          </div>
+          <span>Odjavi se</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>

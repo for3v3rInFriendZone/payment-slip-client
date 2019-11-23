@@ -1,0 +1,39 @@
+<div class="full-container animated zoomIn d-flex justify-content-center align-items-center">
+  <div class="login">
+    <div class="d-flex flex-column align-items-center">
+      <figure class="logo">
+        <img src="../../../assets/images/chicken-logo.png" class="img-circle img-responsive" height="150px" width="150px" />
+      </figure>
+      <h1> Sign in </h1>
+      <hr class="divider" />
+    </div>
+
+    <form [formGroup]="loginForm" (ngSubmit)="login()" novalidate>
+      <div class="row d-flex flex-column justify-content-center align-items-center">
+        <div *ngIf="loginFailed" class="animated shake mt-4 alert alert-danger text-center" role="alert">
+          <b> Korisničko ime </b> ili <b> Lozinka </b> su pogrešni.
+        </div>
+        <div class="form-group col-10">
+          <div class="input-group">
+            <span class="input-group-prepend input-group-text"><i class="far fa-envelope"></i></span>
+            <input type="email" class="form-control" placeholder="Korisničko ime" formControlName="username">
+          </div>
+          <small class="ml-2 text-danger" *ngIf="hasError('username')"> Obavezna je ispravna E-mail adresa.
+          </small>
+        </div>
+        <div class="col-10 form-group">
+          <div class="input-group">
+            <span class="input-group-prepend input-group-text"><i class="fas fa-key"></i></span>
+            <input type="password" class="form-control" placeholder="Lozinka" formControlName="password">
+          </div>
+          <small class="ml-2 text-danger" *ngIf="hasError('password')"> Lozinka je obavezna.
+          </small>
+        </div>
+        <button class="btn btn-primary btn-lg mt-3" type="submit" [disabled]="isLoading">
+          Prijavljivanje <i *ngIf="!isLoading" class="fas fa-arrow-right"></i>
+          <span *ngIf="isLoading" class="spinner-border" role="status" aria-hidden="true"></span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
